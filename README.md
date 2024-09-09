@@ -76,3 +76,13 @@ or
 ```
 sudo apt install openjdk-11-jdk
 ```
+
+## Installation
+##### Maven
+```
+<dependency>
+  <groupId>com.webencyclop.core</groupId>
+  <artifactId>mftool-java</artifactId>
+  <version>1.0.4</version>
+</dependency>
+```
