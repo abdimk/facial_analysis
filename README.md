@@ -92,6 +92,14 @@ python3 Model/cpuModels/encode_faces.py
 ```
 
 
+### Start the system 
+
+run the kafka producer
+
+```
+python3 Kafka/producer.py
+```
+
 start the utilities as one 
 ```
 python3 control/start.py
@@ -103,6 +111,12 @@ the run the main.py
 ```
 python3 Model/main.py
 ```
+
+stop all with 
+```
+python3 control/stop.py
+```
+
 
 # Installation
 <p align="center">
