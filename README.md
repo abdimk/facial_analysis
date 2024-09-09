@@ -63,9 +63,12 @@ This <b>repository</b> provides simple APIs/functions/methods to work with svm f
 <p align="center">
 <a href="#kafka">How do i install kafka</a> &nbsp;&bull;&nbsp;
 <a href="#elastic">Elastic Search installtion</a> &nbsp;&bull;&nbsp;
-<a href="#kibana">Kibana installation</a> &nbsp;&bull;&nbsp;
+<a href="#kibana">Kibana installation</a>
 </p>
 
+
+
+# kafka
 installing kafka for ubuntu 22.04 > 
 
 To update the system packages 
