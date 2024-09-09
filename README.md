@@ -19,7 +19,7 @@
 &nbsp <a target="_blank" href="https://www.linkedin.com/in/ankitwasankar/"><img height="20" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </p>
 <p align="center">
-  This repository contains the <strong>Setup and Configration</strong> for activity and facial recogniton attendance system its also easy to setup.
+  This repository contains the <strong>Setup and Configration</strong> for activity and facial recogniton attendance system.
     
   </p>
 
