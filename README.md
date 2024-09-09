@@ -31,6 +31,9 @@
 <a href="#issue">Issue?</a>
 </p>
 
+
+
+
 # Introduction
 This <b>repository</b> provides simple APIs/functions/methods to work with svm facial recogniton You can:
 
@@ -41,6 +44,11 @@ This <b>repository</b> provides simple APIs/functions/methods to work with svm f
 - Generate Historical report using csv
 - Able to run on distributed system/cluster nodes
 
+# Face recognition Process using svm(support vector machine) clssification
+<h4><p align="Center">Face Recognition Process </p></h4>
+<div align="center">
+    <a href="https://github.com/abdimk/facial_analysis/blob/main/Architecture"><img src="https://github.com/abdimk/facial_analysis/blob/main/Architecture/2.png" width="900"></a>
+</div>
 ## Installation
 
 you need to Install those dependency for your os to run this system !
