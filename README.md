@@ -49,61 +49,30 @@ This <b>repository</b> provides simple APIs/functions/methods to work with svm f
 <div align="center">
     <a href="https://github.com/abdimk/facial_analysis/blob/main/Architecture"><img src="https://github.com/abdimk/facial_analysis/blob/main/Architecture/2.png" width="900"></a>
 </div>
-## Installation
 
-you need to Install those dependency for your os to run this system !
+## System Dependencies
+
+<strong> you need to Install those dependency for your os to run this system <strong> !
 
 - Kafka - is a distributed event streaming platform used for building real-time data pipelines and streaming applications.
 - ElasticSearch -is a distributed, RESTful search and analytics engine built on top of Apache Lucene.
 - Kibana - Kibana is an open-source data visualization and exploration tool for Elasticsearch.
-  
-##### Graddle
-```
-implementation 'com.webencyclop.core:mftool-java:1.0.4'
-```
-For other dependency management tool, please visit
-<a href="https://search.maven.org/artifact/com.webencyclop.core/mftool-java">https://search.maven.org/artifact/com.webencyclop.core/mftool-java</a>
 
 
-## Usage
-Sample code that shows how to use the library:<br/>
-```
-MFTool tool = new MFTool();
-tool.matchingScheme("Axis");   //-- get a list of all schemes with Axis in its name
-tool.getCurrentNav("120503");  //-- get current nav
-```
-The other available methods are described in the next section.
+# installation
 
-## Documentation
-Multiple methods provide ways to work with mutual funds and related data. Those are listed below in detail.
+installing kafka for ubuntu 22.04 > 
 
-### 1. How to initialize an MFTool object
+To update the system packages 
 ```
-MFTool tool = new MFTool();
+sudo apt get update
 ```
-This will create the object for you, but it's recommended that you create this object as a <b>singleton</b> object.
-The object uses a caching mechanism, which under-the-hood caches the values of historic nav and other static information to improve the performance. 
-<br/>If you are using the Spring project, you can create the bean in ``@Configuration`` configuration class.
+you can install OpenJDK 8 or OpenJDK 11
 ```
-@Configuration
-public class MFToolConfig{
-    @Bean
-    public MFTool initializeMfTool() {
-        MFTool tool = new MFTool();
-        return tool;
-    }
-}
+sudo apt install openjdk-8-jdk
 ```
-You can use MFTool in other services using ``@Inject`` or ``@autowired`` annotation.
-```
-@Service
-public class MyService {
-    
-    @Autowired
-    private MFTool tool;
+or
 
-    public void getCurrentNav(String scheme) {
-        BigDecimal nav = tool.getCurrentNav(scheme);
-    }
-}
+```
+sudo apt install openjdk-11-jdk
 ```
