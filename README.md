@@ -77,12 +77,116 @@ or
 sudo apt install openjdk-11-jdk
 ```
 
-## Installation
-##### Maven
+you also need to add java home to your path/bashrc file
+
 ```
-<dependency>
-  <groupId>com.webencyclop.core</groupId>
-  <artifactId>mftool-java</artifactId>
-  <version>1.0.4</version>
-</dependency>
+sudo nano ~/.bashrc
+```
+then add this 
+```
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64 
+export PATH=$PATH:/usr/lib/jvm/java-11-openjdk-amd64/bin 
+```
+update the path 
+```
+sudo source ~/.bashrc
+```
+
+### download kafka binary
+To download the Kafka binary from offical website. Please use this <a href="https://kafka.apache.org/downloads">Kafka official download page</a> and to prompts to download page and you can download Kafka using wget
+
+```
+sudo wget https://downloads.apache.org/kafka/3.8.0/kafka_2.13-3.8.0.tgz
+````
+
+#### Step #1:Install Apache Kafka on Ubuntu 22.04 LTS
+Now to un-tar or Unzip the archive file and move to another location:
+
+```
+sudo tar xzf kafka_2.13-3.8.0.tgz
+```
+
+```
+sudo mv kafka_2.12-3.5.0 /opt/kafka
+```
+#### Step #2:Creating Zookeeper and Kafka Systemd Unit Files in Ubuntu 22.04 LTS
+
+Create the systemd unit file for zookeeper service
+
+```
+sudo nano  /etc/systemd/system/zookeeper.service
+```
+
+paste the below lines
+
+```
+/etc/systemd/system/zookeeper.service
+[Unit]
+Description=Apache Zookeeper service
+Documentation=http://zookeeper.apache.org
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+Type=simple
+ExecStart=/opt/kafka/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties
+ExecStop=/opt/kafka/bin/zookeeper-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Reload the daemon to take effect
+
+```
+sudo systemctl daemon-reload
+```
+Create the systemd unit file for kafka service
+
+```
+sudo nano /etc/systemd/system/kafka.service
+```
+paste the below lines
+```
+[Unit]
+Description=Apache Kafka Service
+Documentation=http://kafka.apache.org/documentation.html
+Requires=zookeeper.service
+
+[Service]
+Type=simple
+Environment="JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64"
+ExecStart=/opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
+ExecStop=/opt/kafka/bin/kafka-server-stop.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+Reload the daemon to take effect
+```
+sudo systemctl daemon-reload
+```
+
+#### Step #3:To Start ZooKeeper and Kafka Service and Check its Status
+Lets start zookeeper service first
+```
+sudo systemctl start zookeeper
+```
+
+Check the status of  zookeeper service if it started
+
+```
+sudo systemctl status zookeeper
+```
+
+Start the kafka service
+
+```
+sudo systemctl start kafka
+```
+
+Check the status of  kafka service if it started
+```
+sudo systemctl status kafka
 ```
