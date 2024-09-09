@@ -70,7 +70,7 @@ install the python libraries need
 pip3 install -r requirements.txt
 ```
 <div align="center">
-    <a href="#"><img src="https://github.com/abdimk/facial_analysis/blob/main/Assets/old.png" width="200" hight="300"></a>
+    <a href="#"><img src="https://github.com/abdimk/facial_analysis/blob/main/Assets/old.png" width="200" hight="320"></a>
      <a href="#"><img src="https://github.com/abdimk/facial_analysis/blob/main/Assets/new.jpg" width="200" hight="300"></a>
 </div>
 
