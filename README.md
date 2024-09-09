@@ -24,11 +24,11 @@
   </p>
 
 <p align="center">
-<a href="#introduction">Introduction</a> &nbsp;&bull;&nbsp;
-<a href="#installation">Installation</a> &nbsp;&bull;&nbsp;
-<a href="#usage">Usage</a> &nbsp;&bull;&nbsp;
-<a href="#documentation">Documentation</a> &nbsp;&bull;&nbsp;
-<a href="#issue">Issue?</a>
+<a href="#Introduction">Introduction</a> &nbsp;&bull;&nbsp;
+<a href="#Installation">Installation</a> &nbsp;&bull;&nbsp;
+<a href="#Usage">Usage</a> &nbsp;&bull;&nbsp;
+<a href="#Documentation">Documentation</a> &nbsp;&bull;&nbsp;
+<a href="#Issue">Issue?</a>
 </p>
 
 
@@ -59,7 +59,7 @@ This <b>repository</b> provides simple APIs/functions/methods to work with svm f
 - Kibana - Kibana is an open-source data visualization and exploration tool for Elasticsearch.
 
 
-# installation
+# Installation
 <p align="center">
 <a href="#kafka">How do i install kafka</a> &nbsp;&bull;&nbsp;
 <a href="#elastic">Elastic Search installtion</a> &nbsp;&bull;&nbsp;
