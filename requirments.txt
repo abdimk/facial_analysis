@@ -1,0 +1,6 @@
+customtkinter
+kafka-python
+elasticsearch
+opencv-python
+pillow
+rich
