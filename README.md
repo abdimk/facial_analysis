@@ -69,7 +69,9 @@ install the python libraries need
 ```
 pip3 install -r requirements.txt
 ```
-
+<div align="center">
+    <a href="#"><img src="https://github.com/abdimk/facial_analysis/blob/main/Assets/old.png" width="900"></a>
+</div>
 
 record a user using either [Register](https://github.com/abdimk/facial_analysis/blob/main/Register.py) or our new [customRegister](https://github.com/abdimk/facial_analysis/blob/main/customRegister.py)
 
