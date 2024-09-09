@@ -52,7 +52,7 @@ This <b>repository</b> provides simple APIs/functions/methods to work with svm f
 
 ## System Dependencies
 
-<strong> you need to Install those dependency for your os to run this system <strong> !
+<strong> you need to Install those dependency for your os to run this system </strong> !
 
 - Kafka - is a distributed event streaming platform used for building real-time data pipelines and streaming applications.
 - ElasticSearch -is a distributed, RESTful search and analytics engine built on top of Apache Lucene.
