@@ -19,9 +19,9 @@
 &nbsp <a target="_blank" href="https://www.linkedin.com/in/ankitwasankar/"><img height="20" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 </p>
 <p align="center">
-  This repository contains the <strong>MF TOOL - JAVA</strong> source code.
-  MF TOOL - JAVA is a Java library developed to ease the process of working with Indian Mutual Funds. It's powerful, actively maintained and easy to use.
-</p>
+  This repository contains the <strong>Setup and Configration</strong> for activity and facial recogniton attendance system its also easy to setup.
+    
+  </p>
 
 <p align="center">
 <a href="#introduction">Introduction</a> &nbsp;&bull;&nbsp;
@@ -32,23 +32,23 @@
 </p>
 
 # Introduction
-This <b>mf-tool java</b> library provides simple APIs/functions/methods to work with Indian Mutual Funds. You can:
+This <b>repository</b> provides simple APIs/functions/methods to work with svm facial recogniton You can:
 
-- Fetch a list of all mutual fund schemes.
-- Fetch a list of matching mutual fund schemes based on provided keywords.
-- Fetch historic or current NAV (Net Asset Value) for a fund.
-- Fetch details for a fund and fund house.
-- Integrate this with any Java project.
+- Reconize faces using svm Classification [Tensorflow](for Future)
+- Able to take live stream feeds from multiple cameras at the same time using Kafka
+- Fetch historic data on kibana
+- Fetch assocated details from the sqlite database
+- Generate Historical report using csv
+- Able to run on distributed system/cluster nodes
 
 ## Installation
-##### Maven
-```
-<dependency>
-  <groupId>com.webencyclop.core</groupId>
-  <artifactId>mftool-java</artifactId>
-  <version>1.0.4</version>
-</dependency>
-```
+
+you need to Install those dependency for your os to run this system !
+
+- Kafka - is a distributed event streaming platform used for building real-time data pipelines and streaming applications.
+- ElasticSearch -is a distributed, RESTful search and analytics engine built on top of Apache Lucene.
+- Kibana - Kibana is an open-source data visualization and exploration tool for Elasticsearch.
+  
 ##### Graddle
 ```
 implementation 'com.webencyclop.core:mftool-java:1.0.4'
