@@ -58,6 +58,41 @@ This <b>repository</b> provides simple APIs/functions/methods to work with svm f
 - ElasticSearch -is a distributed, RESTful search and analytics engine built on top of Apache Lucene.
 - Kibana - Kibana is an open-source data visualization and exploration tool for Elasticsearch.
 
+# Usage
+clone the github repo 
+
+```
+git clone https://github.com/abdimk/facial_analysis
+```
+install the python libraries need 
+
+```
+pip3 install -r requirements.txt
+```
+
+
+record a user using either https://github.com/abdimk/facial_analysis/blob/main/Register.py or our new [custom](https://github.com/abdimk/facial_analysis/blob/main/customRegister.py)
+
+it capture 5 images for a singe individual and stores it on the DataBase folder
+
+encode the face and thier names 
+
+```
+python3 Model/cpuModels/encode_faces.py
+```
+
+
+start the utilities as one 
+```
+python3 control/start.py
+```
+cd to the model
+
+the run the main.py
+
+```
+python3 Model/main.py
+```
 
 # Installation
 <p align="center">
