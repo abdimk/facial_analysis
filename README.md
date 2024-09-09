@@ -7,7 +7,7 @@
 -->
 <h4><p align="Center">The Architecture</p></h4>
 <div align="center">
-    <a href="https://github.com/abdimk/facial_analysis/blob/main/Architecture"><img src="https://github.com/abdimk/facial_analysis/blob/main/Architecture/1.png" width="300"></a>
+    <a href="https://github.com/abdimk/facial_analysis/blob/main/Architecture"><img src="https://github.com/abdimk/facial_analysis/blob/main/Architecture/1.png" width="900"></a>
 </div>
 
 
@@ -70,7 +70,7 @@ install the python libraries need
 pip3 install -r requirements.txt
 ```
 <div align="center">
-    <a href="#"><img src="https://github.com/abdimk/facial_analysis/blob/main/Assets/old.png" width="900"></a>
+    <a href="#"><img src="https://github.com/abdimk/facial_analysis/blob/main/Assets/old.png" width="400"></a>
 </div>
 
 record a user using either [Register](https://github.com/abdimk/facial_analysis/blob/main/Register.py) or our new [customRegister](https://github.com/abdimk/facial_analysis/blob/main/customRegister.py)
